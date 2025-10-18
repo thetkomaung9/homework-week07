@@ -29,7 +29,7 @@ class _HomeScreenState extends State<HomeScreen> {
       floatingActionButton: FloatingActionButton(
         backgroundColor: PRIMARY_COLOR,
         onPressed: (){
-          
+          showModalBottomSheet(context: , builder: builder)
         },
       ),
     )
