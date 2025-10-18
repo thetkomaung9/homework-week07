@@ -13,4 +13,7 @@ class ScheduleBottomSheet extends StatefulWidget{
     required this.selectedDate,
     Key? key,
   }) : super(key: key);
+
+  @override
+  State<ScheduleBottomSheet> createState() => _ScheduleBottomSheetState();
 }
