@@ -48,5 +48,8 @@ class ScheduleCard extends StatelessWidget{
 }
 
 class _Time extends StatelessWidget{
-  
+  final int startTime;
+  final int endTime;
+
+  const _
 }
