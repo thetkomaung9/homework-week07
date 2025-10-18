@@ -89,12 +89,12 @@ class _HomeScreenState extends State<HomeScreen> {
                         direction: DismissDirection.startToEnd,
 
                         onDismissed: (DismissDirection direction){
-                          GetIt.I<LocalDatabase>().removeSchedule(schedule.id);
+                          GetIt.I<LocalDatabase>().removeSchedule(Schedules.id);
                         },
                         child: Padding(
                           padding: const EdgeInsets.only(bottom: 8.0, left: 8.0, right: 8.0),
                           child: ScheduleCard(
-                            startTime: Schedule.startTime,
+                            startTime: schedule.startTime,
                             endTime: schedule.endTime,
                             content: schedule.content,
                           ),
