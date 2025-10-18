@@ -105,6 +105,11 @@ class _ScheduleBottomSheetState extends State<ScheduleBottomSheet>{
 
 
   void onSavePressed() async {
-    if(formKey.cu)
+    if(formKey.currentState!.validate()){
+      formKey.currentState!.save();
+
+
+    await GetIt.I<LocalDatabase>().cr
+    }
   }
 }
