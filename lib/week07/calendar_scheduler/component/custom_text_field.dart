@@ -37,6 +37,7 @@ class CustomTextField extends StatelessWidget{
             maxLines: isTime ? 1 : null,
 
             expands: !isTime,
+            keyboardType: isTime ? TextInputType.number : TextInput.multiline,
           ),
         )
       ],
