@@ -34,7 +34,9 @@ class CustomTextField extends StatelessWidget{
             onSaved: onSaved,
             validator: validator,
             cursorColor: Colors.grey,
-            max
+            maxLines: isTime ? 1 : null,
+
+            expands: !isTime,
           ),
         )
       ],
