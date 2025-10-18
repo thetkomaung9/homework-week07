@@ -7,5 +7,9 @@ import 'package:get_it/get_it.dart';
 import 'package:myapp/week07/calendar_scheduler/database/drift_database.dart';
 
 class ScheduleBottomSheet extends StatefulWidget{
-  
+  final DateTime selectedDate;
+
+  const ScheduleBottomSheet({
+    
+  })
 }
