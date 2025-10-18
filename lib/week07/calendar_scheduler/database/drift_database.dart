@@ -35,6 +35,8 @@ Future<int> removeSchedule(int id) =>
 
 LazyDatabase _openConnection(){
   return LazyDatabase(() async{
-    
+
+
+    final dbFolder = await getApplicationCacheDirectory();
   })
 }
