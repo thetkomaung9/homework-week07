@@ -41,7 +41,7 @@ class CustomTextField extends StatelessWidget{
 
             inputFormatters: isTime
             ?[
-              
+              FilteringTextInputFormatter.digitsOnly,
             ]
           ),
         )
