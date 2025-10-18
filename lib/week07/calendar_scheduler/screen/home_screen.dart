@@ -75,7 +75,16 @@ class _HomeScreenState extends State<HomeScreen> {
                     return Container();
                   }
 
-                  return ListView.builder()
+                  return ListView.builder(
+
+                    itemCount: snapshot.data!.length,
+                    itemBuilder: (context, index){
+
+                      final schedule = snapshot.data![index];
+
+                      
+                    },
+                  )
                 },
               ),
             )
