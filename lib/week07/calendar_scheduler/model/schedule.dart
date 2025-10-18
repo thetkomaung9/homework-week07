@@ -1,7 +1,9 @@
 import 'package:drift/drift.dart';
 
 class Schedule extends Table{
-  IntColumn get id => interger().autoIncrement()();
+  IntColumn get id => integer().autoIncrement()();
   TextColumn get content => text()();
-  Date
+  DateTimeColumn get date => dateTime()();
+  IntColumn get startTime => integer()();
+  IntColumn get endTime => integer()();
 }
