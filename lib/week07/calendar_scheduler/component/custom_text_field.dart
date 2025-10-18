@@ -13,6 +13,21 @@ class CustomTextField extends StatelessWidget{
     required this.isTime,
     required this.onSaved,
     required this.validator,
-    
-  })
+    Key? key,
+  }) : super(key: key);
+
+  @override
+  Widget build(BuildContext context){
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Text(
+          label,
+          style: TextStyle(
+            
+          ),
+        )
+      ],
+    )
+  }
 }
