@@ -7,5 +7,11 @@ import 'package:get_it/get_it.dart';
 
 void main() async {
 
-  Widgets
+  WidgetsFlutterBinding.ensureInitialized();
+
+  await initializeDateFormatting();
+
+  final database = LocalDatabase();
+
+  GetIt.I.registerSingleton(LocalDatabase)
 }
