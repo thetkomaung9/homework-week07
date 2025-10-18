@@ -18,4 +18,15 @@ class ScheduleBottomSheet extends StatefulWidget{
   State<ScheduleBottomSheet> createState() => _ScheduleBottomSheetState();
 }
 
-class _ScheduleBottomSheetState extends
+class _ScheduleBottomSheetState extends State<ScheduleBottomSheet>{
+  final GlobalKey<FormState> formKey = GlobalKey();
+
+  int? startTime;
+  int? endTime;
+  String? content;
+
+  @override
+  Widget build(BuildContext context){
+    
+  }
+}
