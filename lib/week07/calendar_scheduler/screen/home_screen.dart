@@ -64,6 +64,11 @@ class _HomeScreenState extends State<HomeScreen> {
                   count: snapshot.data?.length ?? 0,
                 );
               }
+            ),
+            SizedBox(height: 8.0),
+            Expanded(
+
+              child: Stream,
             )
           ],
         ),
