@@ -68,7 +68,9 @@ class _HomeScreenState extends State<HomeScreen> {
             SizedBox(height: 8.0),
             Expanded(
 
-              child: Stream,
+              child: StreamBuilder<List<Schedule>>(
+                stream: GetIt.I<LocalDatabase>().watchSchedules(selectedDate),
+              ),
             )
           ],
         ),
