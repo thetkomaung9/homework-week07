@@ -3,7 +3,7 @@ import 'package:drift/drift.dart';
 
 import 'package:drift/native.dart';
 import 'package:path_provider/path_provider.dart';
-import 'package:path/path.dart' as p;
+import 'package:path/path.dart';
 import 'dart:io';
 
 
@@ -19,7 +19,7 @@ class LocalDatabase extends _$LocalDatabase{
 
   Stream<List<Schedule>> watchSchedules(DateTime data) =>
 
-  (select(schedule)..where((tbl) => tbl.date.equals(date))).watch();
+  (select(schedules)..where((tbl) => tbl.date.equals(date))).watch();
 
   Future<int> createSchedule(SchedulesCompanion data) =>
   into(schedules).insert(data);
