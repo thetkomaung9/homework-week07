@@ -84,3 +84,12 @@ class _Time extends StatelessWidget{
     );
   }
 }
+
+class _Content extends StatelessWidget{
+  final String content;
+
+  const _Content({
+    required this.content,
+    Key? key,
+  }) : super(key: key);
+}
