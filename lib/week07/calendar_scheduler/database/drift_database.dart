@@ -11,7 +11,7 @@ part 'drift_database.g.dart';
 
 @DriftDatabase(
   tables:[
-    Schedules,
+    Schedule,
   ],
 )
 class LocalDatabase extends _$LocalDatabase{
@@ -19,7 +19,7 @@ class LocalDatabase extends _$LocalDatabase{
 
   Stream<List<Schedule>> watchSchedules(DateTime data) =>
 
-  (select(schedules)..where((tbl) => tbl.date.equals(date))).watch();
+  (select(schedule)..where((tbl) => tbl.date.equals(date))).watch();
 
   Future<int> createSchedule(SchedulesCompanion data) =>
   into(schedules).insert(data);
