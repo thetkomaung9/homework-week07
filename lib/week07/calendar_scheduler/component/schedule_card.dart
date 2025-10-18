@@ -51,5 +51,9 @@ class _Time extends StatelessWidget{
   final int startTime;
   final int endTime;
 
-  const _
+  const _Time({
+    required this.startTime,
+    required this.endTime,
+    
+  })
 }
