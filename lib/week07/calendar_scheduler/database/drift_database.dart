@@ -17,7 +17,7 @@ part 'drift_database.g.dart';
 class LocalDatabase extends _$LocalDatabase{
   LocalDatabase() : super(_openConnection());
 
-  Stream<List<Schedule>> watchSchedules(DateTime data) =>
+  Stream<List<Schedule>> watchSchedules(DateTime date) =>
 
   (select(schedules)..where((tbl) => tbl.date.equals(date))).watch();
 
