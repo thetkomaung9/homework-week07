@@ -51,8 +51,9 @@ class _ScheduleBottomSheetState extends State<ScheduleBottomSheet>{
                         isTime: true,
                         onSaved: (String? val){
 
-                          
+                          startTime= int.parse(val!);
                         },
+                        validator: tim,
                       ),
                     )
                   ],
