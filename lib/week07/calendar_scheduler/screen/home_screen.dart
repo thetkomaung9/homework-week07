@@ -82,7 +82,8 @@ class _HomeScreenState extends State<HomeScreen> {
 
                       final schedule = snapshot.data![index];
 
-                      return Dismissible(key: key, child: child)
+                      return Dismissible(
+                        key: ObjectKey(schedule.id))
                     },
                   )
                 },
