@@ -54,6 +54,7 @@ class _HomeScreenState extends State<HomeScreen> {
 
               onDaySelected: OnDaySelected,
             ),
+            SizedBox(height: 8.0),
             
           ],
         ),
