@@ -70,7 +70,12 @@ class _Time extends StatelessWidget{
       children: [
         Text(
 
-          '${startTime.toString().padLeft(2, '0')}'
+          '${startTime.toString().padLeft(2, '0')}:00',
+          style: textStyle,
+        ),
+        Text(
+
+          '${endTime.toString().padLeft(2, '0')}'
         )
       ],
     )
