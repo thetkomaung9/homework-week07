@@ -70,7 +70,13 @@ class _HomeScreenState extends State<HomeScreen> {
 
               child: StreamBuilder<List<Schedule>>(
                 stream: GetIt.I<LocalDatabase>().watchSchedules(selectedDate),
-                
+                builder: (context, snapshot){
+                  if(!snapshot.hasData){
+                    return Container();
+                  }
+
+                  return ListView.builder()
+                },
               ),
             )
           ],
