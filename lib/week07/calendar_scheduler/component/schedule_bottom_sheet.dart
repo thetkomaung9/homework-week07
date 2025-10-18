@@ -40,7 +40,15 @@ class _ScheduleBottomSheetState extends State<ScheduleBottomSheet>{
           child: Padding(
             padding: EdgeInsets.only(left: 8, right: 8, top: 8, bottom: bottomInset),
             child: Column(
-              
+
+              children: [
+                Row(
+
+                  children: [
+                    
+                  ],
+                )
+              ],
             ),
           ),
         ),
