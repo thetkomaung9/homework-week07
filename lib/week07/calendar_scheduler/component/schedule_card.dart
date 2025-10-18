@@ -81,6 +81,6 @@ class _Time extends StatelessWidget{
           ),
         ),
       ],
-    )
+    );
   }
 }
