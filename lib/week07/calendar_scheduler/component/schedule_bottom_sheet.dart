@@ -53,7 +53,7 @@ class _ScheduleBottomSheetState extends State<ScheduleBottomSheet>{
 
                           startTime= int.parse(val!);
                         },
-                        validator: tim,
+                        validator: timeValidator,
                       ),
                     )
                   ],
