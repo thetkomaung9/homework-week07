@@ -34,7 +34,7 @@ class CustomTextField extends StatelessWidget{
             onSaved: onSaved,
             validator: validator,
             cursorColor: Colors.grey,
-            
+            max
           ),
         )
       ],
