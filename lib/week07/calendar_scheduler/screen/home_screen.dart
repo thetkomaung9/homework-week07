@@ -56,7 +56,7 @@ class _HomeScreenState extends State<HomeScreen> {
             ),
             SizedBox(height: 8.0),
             SizedBox(height: 8.0),
-            StreamBuilder()
+            StreamBuilder<List<Schedule>
           ],
         ),
       ),
