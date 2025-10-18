@@ -88,8 +88,9 @@ class _HomeScreenState extends State<HomeScreen> {
                         direction: DismissDirection.startToEnd,
 
                         onDismissed: (DismissDirection direction){
-                          
+                          GetIt.I<LocalDatabase>().removeSchedule(schedule.id);
                         },
+                        
                         )
                     },
                   )
