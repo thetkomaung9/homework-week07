@@ -85,7 +85,11 @@ class _HomeScreenState extends State<HomeScreen> {
                       return Dismissible(
                         key: ObjectKey(schedule.id),
 
-                        
+                        direction: DismissDirection.startToEnd,
+
+                        onDismissed: (DismissDirection direction){
+                          
+                        },
                         )
                     },
                   )
