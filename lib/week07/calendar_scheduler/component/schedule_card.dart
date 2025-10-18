@@ -12,5 +12,17 @@ class ScheduleCard extends StatelessWidget{
     required this.endTime,
     required this.content,
     Key? key
-  })
+  }) : super(key: key);
+
+  @override
+  Widget build(BuildContext context){
+    return Container(
+      decoration: BoxDecoration(
+        border: Border.all(
+          width: 1.0,
+          color: PRIMARY_COLOR,
+        ),
+      ),
+    )
+  }
 }
