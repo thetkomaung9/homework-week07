@@ -28,5 +28,13 @@ Future<int> removeSchedule(int id) =>
   (delete(schedules)..where((tbl) => tbl.id.equals(id))).go();
 
   @override
-  int get sch
+  int get schemaVersion => 1;
+}
+
+
+
+LazyDatabase _openConnection(){
+  return LazyDatabase(() async{
+    
+  })
 }
