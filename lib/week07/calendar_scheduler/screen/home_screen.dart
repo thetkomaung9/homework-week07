@@ -6,6 +6,7 @@ import 'package:myapp/week07/calendar_scheduler/component/schedule_bottom_sheet.
 import 'package:myapp/week07/calendar_scheduler/const/colors.dart';
 import 'package:get_it/get_it.dart';
 import 'package:myapp/week07/calendar_scheduler/database/drift_database.dart';
+import 'package:myapp/week07/calendar_scheduler/model/schedule.dart';
 import 'package:table_calendar/table_calendar.dart';
 
 class HomeScreen extends StatefulWidget{
@@ -56,7 +57,7 @@ class _HomeScreenState extends State<HomeScreen> {
             ),
             SizedBox(height: 8.0),
             SizedBox(height: 8.0),
-            StreamBuilder<List<Schedule>>(
+            StreamBuilder<List<Schedules>>(
               stream: GetIt.I<LocalDatabase>().watchSchedules(selectedDate),
               builder: (context, snapshot){
                 return TodayBanner(
@@ -68,7 +69,7 @@ class _HomeScreenState extends State<HomeScreen> {
             SizedBox(height: 8.0),
             Expanded(
 
-              child: StreamBuilder<List<Schedule>>(
+              child: StreamBuilder<List<Schedules>>(
                 stream: GetIt.I<LocalDatabase>().watchSchedules(selectedDate),
                 builder: (context, snapshot){
                   if(!snapshot.hasData){
@@ -93,7 +94,7 @@ class _HomeScreenState extends State<HomeScreen> {
                         child: Padding(
                           padding: const EdgeInsets.only(bottom: 8.0, left: 8.0, right: 8.0),
                           child: ScheduleCard(
-                            startTime: schedule.startTime,
+                            startTime: Schedule.startTime,
                             endTime: schedule.endTime,
                             content: schedule.content,
                           ),
