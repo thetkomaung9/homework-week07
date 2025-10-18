@@ -69,7 +69,12 @@ class _ScheduleBottomSheetState extends State<ScheduleBottomSheet>{
                       ),
                     ),
                   ],
+                ),
+                SizedBox(height: 8.0),
+                Expanded(
+                  child: CustomTextField(label: label, isTime: isTime, onSaved: onSaved, validator: validator),
                 )
+
               ],
             ),
           ),
