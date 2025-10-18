@@ -59,7 +59,10 @@ class _HomeScreenState extends State<HomeScreen> {
             StreamBuilder<List<Schedule>>(
               stream: GetIt.I<LocalDatabase>().watchSchedules(selectedDate),
               builder: (context, snapshot){
-                
+                return TodayBanner(
+                  selectedDate: selectedDate,
+                  count: snapshot.data?.length ?? 0,
+                );
               },
             )
           ],
