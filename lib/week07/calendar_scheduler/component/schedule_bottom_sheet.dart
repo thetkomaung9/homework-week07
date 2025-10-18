@@ -56,7 +56,7 @@ class _ScheduleBottomSheetState extends State<ScheduleBottomSheet>{
                         validator: timeValidator,
                       ),
                     ),
-                    
+                    const SizedBox(width: 16.0),
                   ],
                 )
               ],
