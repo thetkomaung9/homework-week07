@@ -6,5 +6,13 @@ class CustomTextField extends StatelessWidget{
   final String label;
   final bool isTime;
   final FormFieldSetter<String> onSaved;
-  final Form
+  final FormFieldValidator<String> validator;
+
+  const CustomTextField({
+    required this.label,
+    required this.isTime,
+    required this.onSaved,
+    required this.validator,
+    
+  })
 }
