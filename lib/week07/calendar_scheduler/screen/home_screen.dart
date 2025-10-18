@@ -6,3 +6,12 @@ import 'package:myapp/week07/calendar_scheduler/component/schedule_bottom_sheet.
 import 'package:myapp/week07/calendar_scheduler/const/colors.dart';
 import 'package:get_it/get_it.dart';
 import 'package:myapp/week07/calendar_scheduler/database/drift_database.dart';
+
+class HomeScreen extends StatefulWidget{
+
+  const HomeScreen({Key? key}) : super(key: key);
+
+  @override
+  State<HomeScreen> createState() => _HomeScreenState();
+  
+}
