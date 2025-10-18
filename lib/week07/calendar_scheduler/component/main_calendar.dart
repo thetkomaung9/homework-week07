@@ -39,8 +39,9 @@ class MainCalendar extends StatelessWidget{
           color: LIGHT_GREY_COLOR,
         ),
         weekendDecoration: BoxDecoration(
-          borderRadius: 
-        )
+          borderRadius: BorderRadius.circular(6.0),
+          color: LIGHT_GREY_COLOR,
+        ),
       ),
     )
   }
