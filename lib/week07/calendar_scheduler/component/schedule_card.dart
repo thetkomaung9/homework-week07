@@ -65,6 +65,14 @@ class _Time extends StatelessWidget{
       fontSize: 16.0,
     );
 
-    return
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Text(
+
+          '${startTime.toString().padLeft(2, '0')}'
+        )
+      ],
+    )
   }
 }
