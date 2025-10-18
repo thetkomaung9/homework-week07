@@ -19,5 +19,5 @@ class LocalDatabase extends _$LocalDatabase{
 
   Stream<List<Schedule>> watchSchedules(DateTime data) =>
 
-  (select(schedules)..where((tbl)))
+  (select(schedules)..where((tbl) => tbl.date.equals(date))).watch();
 }
