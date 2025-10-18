@@ -45,7 +45,7 @@ class _ScheduleBottomSheetState extends State<ScheduleBottomSheet>{
                 Row(
 
                   children: [
-                    
+                    Expanded()
                   ],
                 )
               ],
