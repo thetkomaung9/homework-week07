@@ -40,7 +40,9 @@ class _HomeScreenState extends State<HomeScreen> {
             isScrollControlled: true,
           );
         },
-        
+        child: Icon(
+          Icons.add,
+        ),
       ),
     )
   }
