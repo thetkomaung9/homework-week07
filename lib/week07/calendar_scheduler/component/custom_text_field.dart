@@ -24,8 +24,13 @@ class CustomTextField extends StatelessWidget{
         Text(
           label,
           style: TextStyle(
-            
+            color: PRIMARY_COLOR,
+            fontWeight: FontWeight.w600,
           ),
+        ),
+        Expanded(
+          flex: isTime ? 0 : 1,
+          
         )
       ],
     )
