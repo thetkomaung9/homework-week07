@@ -87,6 +87,10 @@ class _ScheduleBottomSheetState extends State<ScheduleBottomSheet>{
                   child: ElevatedButton(
 
                     onPressed: onSavePressed,
+                    style: ElevatedButton.styleFrom(
+                      foregroundColor: Colors.white,
+                      backgroundColor: PRIMARY_COLOR,
+                    ),
                   ),
                 )
 
