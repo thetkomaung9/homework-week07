@@ -109,7 +109,9 @@ class _ScheduleBottomSheetState extends State<ScheduleBottomSheet>{
       formKey.currentState!.save();
 
 
-    await GetIt.I<LocalDatabase>().cr
+    await GetIt.I<LocalDatabase>().createSchedule(
+      
+    )
     }
   }
 }
