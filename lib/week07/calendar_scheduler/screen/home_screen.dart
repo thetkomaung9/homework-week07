@@ -52,7 +52,7 @@ class _HomeScreenState extends State<HomeScreen> {
             MainCalendar(
               selectedDate: selectedDate,
 
-              onDaySelected: OnDaySelected,
+              onDaySelected: onDaySelected,
             ),
             SizedBox(height: 8.0),
             SizedBox(height: 8.0),
