@@ -44,6 +44,16 @@ class _HomeScreenState extends State<HomeScreen> {
           Icons.add,
         ),
       ),
+      body: SafeArea(
+        child: Column(
+          children: [
+
+            MainCalendar(
+              
+            )
+          ],
+        ),
+      ),
     )
   }
 }
