@@ -132,7 +132,7 @@ class _ScheduleBottomSheetState extends State<ScheduleBottomSheet>{
 
     try{
       number = int.parse(val);
-    } catch (e){
+    } catch (e) {
       
     }
   }
