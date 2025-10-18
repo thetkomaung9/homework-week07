@@ -54,6 +54,6 @@ class _Time extends StatelessWidget{
   const _Time({
     required this.startTime,
     required this.endTime,
-    
-  })
+    Key? key,
+  }) : super(key: key);
 }
