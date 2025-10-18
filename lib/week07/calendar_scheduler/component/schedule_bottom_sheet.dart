@@ -121,5 +121,17 @@ class _ScheduleBottomSheetState extends State<ScheduleBottomSheet>{
     Navigator.of(context).pop();
     }
   }
-  
+
+
+  String? timeValidator(String? val){
+    if(val == null){
+      return '값을 입력해주세요';
+    }
+
+    int? number;
+
+    try{
+      
+    }
+  }
 }
