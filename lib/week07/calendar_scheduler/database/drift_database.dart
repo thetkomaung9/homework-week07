@@ -10,5 +10,7 @@ import 'dart:io';
 part 'drift_database.g.dart';
 
 @DriftDatabase(
-  
+  tables:[
+    Schedules,
+  ]
 )
