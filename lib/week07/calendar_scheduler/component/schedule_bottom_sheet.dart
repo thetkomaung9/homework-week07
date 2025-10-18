@@ -19,7 +19,7 @@ class ScheduleBottomSheet extends StatefulWidget{
 }
 
 class _ScheduleBottomSheetState extends State<ScheduleBottomSheet>{
-  final GlobalKey<FormState> formKey = GlobalKey();
+  final GlobalKey<FormState> formKey = GlobalKey<FormState>();
 
   int? startTime;
   int? endTime;
