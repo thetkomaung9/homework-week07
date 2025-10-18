@@ -63,7 +63,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   selectedDate: selectedDate,
                   count: snapshot.data?.length ?? 0,
                 );
-              },
+              }
             )
           ],
         ),
