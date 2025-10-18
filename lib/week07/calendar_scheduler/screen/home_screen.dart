@@ -19,6 +19,9 @@ class _HomeScreenState extends State<HomeScreen> {
   DateTime selectedDate = DateTime.utc(
     DateTime.now().year,
     DateTime.now().month,
-    DateTime.now()
-  )
+    DateTime.now().day,
+  );
+
+  @override
+  
 }
