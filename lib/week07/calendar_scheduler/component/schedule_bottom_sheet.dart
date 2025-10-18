@@ -32,6 +32,12 @@ class _ScheduleBottomSheetState extends State<ScheduleBottomSheet>{
 
     return Form(
       key: formKey,
+      child: SafeArea(
+        child: Container(
+
+          height: MediaQuery(data: data, child: child),
+        ),
+      ),
     )
   }
 }
