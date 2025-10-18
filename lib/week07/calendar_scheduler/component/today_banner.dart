@@ -26,7 +26,7 @@ class TodayBanner  extends StatelessWidget{
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
             Text(
-              '${selectedDate.year}'
+              '${selectedDate.year}년 ${selectedDate.month}'
             )
           ],
         ),
