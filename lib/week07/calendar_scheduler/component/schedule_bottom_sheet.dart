@@ -35,7 +35,11 @@ class _ScheduleBottomSheetState extends State<ScheduleBottomSheet>{
       child: SafeArea(
         child: Container(
 
-          height: MediaQuery(data: data, child: child),
+          height: MediaQuery.of(context).size.height / 2 + bottomInset,
+          color: Colors.white,
+          child: Padding(
+            padding: Ed,
+          ),
         ),
       ),
     )
