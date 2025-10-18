@@ -30,7 +30,7 @@ class MainCalendar extends StatelessWidget{
         titleTextStyle: TextStyle(
           fontWeight: FontWeight.w700,
           fontSize: 16.0,
-        )
+        ),
       ),
     )
   }
