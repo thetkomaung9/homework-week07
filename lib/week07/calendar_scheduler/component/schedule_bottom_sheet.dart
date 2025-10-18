@@ -118,7 +118,7 @@ class _ScheduleBottomSheetState extends State<ScheduleBottomSheet>{
       ),
     );
 
-    Navigator.of
+    Navigator.of(context).pop();
     }
   }
 }
