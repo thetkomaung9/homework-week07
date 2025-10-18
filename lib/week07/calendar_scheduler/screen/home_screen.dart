@@ -94,8 +94,8 @@ class _HomeScreenState extends State<HomeScreen> {
                         child: Padding(
                           padding: const EdgeInsets.only(bottom: 8.0, left: 8.0, right: 8.0),
                           child: ScheduleCard(
-                            startTime: Schedules.startTime,
-                            endTime: Schedules.endTime,
+                            startTime: schedule.startTime,
+                            endTime: schedule.endTime,
                             content: Schedules.content,
                           ),
                         ),
