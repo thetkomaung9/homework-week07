@@ -21,7 +21,10 @@ class TodayBanner  extends StatelessWidget{
     return Container(
       color:  PRIMARY_COLOR,
       child:  Padding(
-        padding: Edge,
+        padding: EdgeInsets.symmetric(horizontal: 16.0 vertical: 8.0),
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.s,
+        ),
       ),
     )
   }
