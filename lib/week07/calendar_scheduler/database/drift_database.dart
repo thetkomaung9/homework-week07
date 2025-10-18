@@ -12,5 +12,12 @@ part 'drift_database.g.dart';
 @DriftDatabase(
   tables:[
     Schedules,
-  ]
+  ],
 )
+class LocalDatabase extends _$LocalDatabase{
+  LocalDatabase() : super(_openConnection());
+
+  Stream<List<Schedule>> watchSchedules(DateTime data) =>
+
+  (select())
+}
