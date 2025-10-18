@@ -28,6 +28,7 @@ class _ScheduleBottomSheetState extends State<ScheduleBottomSheet>{
   @override
   Widget build(BuildContext context){
 
-    final bottomInset = MediaQuery(data: , child: child)
+    final bottomInset = MediaQuery(context).viewInsets.bottom;
+    
   }
 }
