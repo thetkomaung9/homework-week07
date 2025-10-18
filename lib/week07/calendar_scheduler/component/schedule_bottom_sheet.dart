@@ -45,7 +45,16 @@ class _ScheduleBottomSheetState extends State<ScheduleBottomSheet>{
                 Row(
 
                   children: [
-                    Expanded()
+                    Expanded(
+                      child: CustomTextField(
+                        label: '시작 시간',
+                        isTime: true,
+                        onSaved: (String? val){
+
+                          
+                        },
+                      ),
+                    )
                   ],
                 )
               ],
