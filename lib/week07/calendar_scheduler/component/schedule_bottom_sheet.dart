@@ -82,7 +82,13 @@ class _ScheduleBottomSheetState extends State<ScheduleBottomSheet>{
                     validator:  contentValidator,
                   ),
                 ),
-                
+                SizedBox(
+                  width: double.infinity,
+                  child: ElevatedButton(
+
+                    onPressed: onSavePressed,
+                  ),
+                )
 
               ],
             ),
