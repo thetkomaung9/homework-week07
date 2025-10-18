@@ -31,11 +31,11 @@ class TodayBanner  extends StatelessWidget{
             ),
             Text(
               '$count개', 
-              
-            )
+              style: textStyle,
+            ),
           ],
         ),
       ),
-    )
+    );
   }
 }
