@@ -5,5 +5,6 @@ import 'package:flutter/services.dart';
 class CustomTextField extends StatelessWidget{
   final String label;
   final bool isTime;
-  final FormFieldSetter
+  final FormFieldSetter<String> onSaved;
+  final Form
 }
