@@ -90,7 +90,9 @@ class _HomeScreenState extends State<HomeScreen> {
                         onDismissed: (DismissDirection direction){
                           GetIt.I<LocalDatabase>().removeSchedule(schedule.id);
                         },
-                        
+                        child: Padding(
+                          padding: const EdgeIns,
+                        ),
                         )
                     },
                   )
