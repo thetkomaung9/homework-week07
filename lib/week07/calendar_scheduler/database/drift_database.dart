@@ -11,7 +11,7 @@ part 'drift_database.g.dart';
 
 @DriftDatabase(
   tables:[
-    Schedules,
+    Schedules
   ],
 )
 class LocalDatabase extends _$LocalDatabase{
