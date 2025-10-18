@@ -33,7 +33,8 @@ class CustomTextField extends StatelessWidget{
           child: TextFormField(
             onSaved: onSaved,
             validator: validator,
-            cursorColor: ,
+            cursorColor: Colors.grey,
+            
           ),
         )
       ],
