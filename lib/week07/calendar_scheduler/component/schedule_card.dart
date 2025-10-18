@@ -29,6 +29,9 @@ class ScheduleCard extends StatelessWidget{
         child: IntrinsicHeight(
           child: Row()
           crossAxisAlignment: CrossAxisAlignment.stretch,
+          children:[
+            
+          ]
         ),
       ),
     )
