@@ -112,7 +112,7 @@ class _ScheduleBottomSheetState extends State<ScheduleBottomSheet>{
     await GetIt.I<LocalDatabase>().createSchedule(
       SchedulesCompanion(
         startTime: Value(startTime!),
-        
+        endTime: Value(endTime)
       )
     )
     }
