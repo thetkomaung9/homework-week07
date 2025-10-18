@@ -38,6 +38,11 @@ class CustomTextField extends StatelessWidget{
 
             expands: !isTime,
             keyboardType: isTime ? TextInputType.number : TextInput.multiline,
+
+            inputFormatters: isTime
+            ?[
+              
+            ]
           ),
         )
       ],
