@@ -112,8 +112,10 @@ class _HomeScreenState extends State<HomeScreen> {
   void onDaySelected(DateTime selectedDate, DateTime focusedDate){
 
 
-    selectedDate((){
+    setState(() {
       
+    });((){
+
     })
   }
 }
