@@ -77,7 +77,7 @@ class _ScheduleBottomSheetState extends State<ScheduleBottomSheet>{
                     isTime: false,
                     onSaved: (String? val){
 
-                      content: contentValidator,
+                      content: val;
                     },
                   ),
                 )
