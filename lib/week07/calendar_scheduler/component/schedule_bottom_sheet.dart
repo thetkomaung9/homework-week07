@@ -93,8 +93,7 @@ class _ScheduleBottomSheetState extends State<ScheduleBottomSheet>{
                     ),
                     child: Text('저장'),
                   ),
-                )
-
+                ),
               ],
             ),
           ),
