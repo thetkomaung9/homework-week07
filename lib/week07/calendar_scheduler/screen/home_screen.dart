@@ -34,9 +34,13 @@ class _HomeScreenState extends State<HomeScreen> {
             isDismissible: true,
             builder: (_) => ScheduleBottomsheet(
               selectedDate: selectedDate,
-            )
-          )
+            ),
+
+
+            isScrollControlled: true,
+          );
         },
+        
       ),
     )
   }
