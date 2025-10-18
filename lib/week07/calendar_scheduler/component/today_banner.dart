@@ -12,5 +12,10 @@ class TodayBanner  extends StatelessWidget{
   }) : super(key: key);
 
   @override
-  Widget build)BuildContext context
+  Widget build(BuildContext context){
+    final textStyle = TextStyle(
+      fontWeight: FontWeight.w600,
+      color: Colors.white,
+    )
+  }
 }
