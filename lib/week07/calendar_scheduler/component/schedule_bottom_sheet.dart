@@ -133,7 +133,7 @@ class _ScheduleBottomSheetState extends State<ScheduleBottomSheet>{
     try{
       number = int.parse(val);
     } catch (e) {
-      
+      return '숫자를 입력해주세요';
     }
   }
 }
