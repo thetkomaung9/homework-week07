@@ -92,4 +92,13 @@ class _Content extends StatelessWidget{
     required this.content,
     Key? key,
   }) : super(key: key);
+
+  @override
+  Widget build(BuildContext context){
+    return Expanded(
+      child: Text(
+        content,
+      ),
+    );
+  }
 }
