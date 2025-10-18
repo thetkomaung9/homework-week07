@@ -79,6 +79,7 @@ class _ScheduleBottomSheetState extends State<ScheduleBottomSheet>{
 
                       content: val;
                     },
+                    validator:  contentValidator,
                   ),
                 )
 
