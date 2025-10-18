@@ -26,7 +26,7 @@ class MainCalendar extends StatelessWidget{
       focusedDay: DateTime.now(),
       headerStyle: HeaderStyle(
         titleCentered: true,
-        
+        for
       ),
     )
   }
