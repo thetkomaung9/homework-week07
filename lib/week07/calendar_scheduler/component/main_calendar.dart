@@ -4,5 +4,15 @@ import 'package:myapp/week07/calendar_scheduler/const/colors.dart';
 
 class MainCalendar extends StatelessWidget{
   final OnDaySelected onDaySelected;
-  
+  final DateTime selectedDate;
+
+  MainCalendar({
+    required this.onDaySelected,
+    required this.selectedDate,
+  });
+
+  @override
+  Widget build(BuildContext context){
+    
+  }
 }
