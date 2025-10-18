@@ -13,5 +13,11 @@ void main() async {
 
   final database = LocalDatabase();
 
-  GetIt.I.registerSingleton<LocalDatabase>
+  GetIt.I.registerSingleton<LocalDatabase>(database);
+
+  runApp(
+    MaterialApp(
+      home: HomeScreen(),
+    ),
+  );
 }
